@@ -9,6 +9,7 @@ def rate_limit_translate():
 
 # Apply the rate limiter to the translate route
 app.before_request(rate_limit_translate)
-
+print("Server is running on port 5000")
+print("Rate limit is 10 requests per minute")
 if __name__ == '__main__':
     app.run(debug=True) 
