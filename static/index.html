@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Translator</h1>
+        <p>Select any text on this page to translate it. A translation menu will appear when text is selected.</p>
+        
+        <div class="content">
+            <h2>Sample Text</h2>
+            <p>This is a sample paragraph that you can use to test the translation functionality. 
+               Select any part of this text to see the translation options appear.</p>
+            
+            <h2>How to Use</h2>
+            <ol>
+                <li>Select any text on this page</li>
+                <li>Click the "Translate" button that appears</li>
+                <li>The selected text will be translated</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Translation tooltip -->
+    <div id="translation-tooltip" class="tooltip" style="display: none;">
+        <select id="target-language">
+            <option value="DE">German</option>
+            <option value="ES">Spanish</option>
+            <option value="FR">French</option>
+            <option value="IT">Italian</option>
+            <option value="JA">Japanese</option>
+            <option value="ZH">Chinese</option>
+        </select>
+        <button onclick="translateSelection()">Translate</button>
+    </div>
+
+    <script src="translator.js"></script>
+</body>
+</html> 
